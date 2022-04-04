@@ -21,3 +21,8 @@ You can check your files for:
     (find . -maxdepth 1 -name "*.*" -not -type d -exec isutf8 "{}" "+")
     (find app bin scripts src tests web -name "*.*" -not -type d -not -name "*.png" -not -name "*.gif" -not -name "favicon.ico"  -exec isutf8 "{}" "+")
     ```   
+
+## Weblinks
+- [CHANGELOG](CHANGELOG.md)
+- [filecheck on github.com](https://github.com/deeagle/filecheck)
+- [filecheck on hub.docker.com](https://hub.docker.com/r/docdee/filecheck)
