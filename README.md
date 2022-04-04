@@ -1,5 +1,7 @@
 # Container 4 file checks
 
+[![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)
+
 I need a container for CI/CD testing of incoming changes from non linux environments.   
 Installed tools are:
 - `find`, `file`, `git`, `isutf8`
