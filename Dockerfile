@@ -1,3 +1,3 @@
 FROM alpine:latest
 
-RUN apk add file git moreutils
+RUN apk --no-cache add file git moreutils
