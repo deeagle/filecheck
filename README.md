@@ -36,3 +36,4 @@ You can check your files for:
 - [filecheck on github.com](https://github.com/deeagle/filecheck)
 - [filecheck on hub.docker.com](https://hub.docker.com/r/docdee/filecheck)
 - [docker-alpine](https://github.com/alpinelinux/docker-alpine)
+- [Dockerfile lint](https://github.com/hadolint/hadolint)
