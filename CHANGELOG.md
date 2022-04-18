@@ -1,5 +1,13 @@
 # Semantic Versioning Changelog
 
+## [1.0.1](https://github.com/deeagle/filecheck/compare/v1.0.0...v1.0.1) (2022-04-18)
+
+
+### Bug Fixes
+
+* apk cache ([7ba91bf](https://github.com/deeagle/filecheck/commit/7ba91bff6c1118e66623498f1995bc82cfc6006a))
+* setup alpine version ([7c2e396](https://github.com/deeagle/filecheck/commit/7c2e396c13081e8daec1cf96679d17aef2b6465e))
+
 # 1.0.0 (2020-05-25)
 
 
