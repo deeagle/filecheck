@@ -26,9 +26,7 @@ jobs:
         uses: docker/metadata-action@v3
         with:
           images: docdee/filecheck
-          tags: |
-            type=ref,event=branch
-            type=sha,prefix=dev-
+          tags: type=ref,event=branch
 
       - name: Build and push
         uses: docker/build-push-action@v2
