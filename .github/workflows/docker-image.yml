@@ -30,7 +30,7 @@ jobs:
           images: docdee/filecheck
           tags: |
             type=ref,event=branch
-            type=sha,prefix={{branch}}-
+            type=sha,prefix=dev-
             type=raw,value=latest
 
       - name: Build and push
