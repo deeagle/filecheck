@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.0.2](https://github.com/deeagle/filecheck/compare/v1.0.1...v1.0.2) (2022-04-18)
+
+
+### Bug Fixes
+
+* add label to trigger release ([74537d0](https://github.com/deeagle/filecheck/commit/74537d0b257746fc0a8ec2767a14479944d21885))
+
 ## [1.0.1](https://github.com/deeagle/filecheck/compare/v1.0.0...v1.0.1) (2022-04-18)
 
 
