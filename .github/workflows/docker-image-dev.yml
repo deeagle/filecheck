@@ -27,8 +27,7 @@ jobs:
         with:
           images: docdee/filecheck
           tags: |
-            type=sha,prefix=dev-
-            type=raw,value=${{ github.event.release.tag_name }}
+            type=raw,value=$(date +%s)
 
       - name: Build and push
         uses: docker/build-push-action@v2
