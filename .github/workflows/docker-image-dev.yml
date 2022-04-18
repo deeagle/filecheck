@@ -27,7 +27,7 @@ jobs:
         with:
           images: docdee/filecheck
           tags: |
-            type=ref,event=branch
+            type=sha,prefix=dev-
             type=raw,value=${{ github.event.release.tag_name }}
 
       - name: Build and push
