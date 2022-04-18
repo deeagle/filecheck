@@ -3,7 +3,7 @@
 [![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)
 [![Alpine](https://img.shields.io/badge/Alpine_Linux-0D597F?style=flat-square&logo=alpine-linux&logoColor=white)](https://img.shields.io/badge/Alpine_Linux-0D597F?style=flat-square&logo=alpine-linux&logoColor=white)
 
-I need a container for CI/CD testing of incoming changes from 
+I need a container for CI/CD testing of incoming changes from
 non linux environments. Installed tools are:
 
 - `find`, `file`, `git`, `isutf8`
@@ -22,11 +22,12 @@ You can check your files for:
 
 - UTF8
   - Find files that are not utf8
-
+    <!-- markdownlint-disable MD013 -->
     ```bash
     (find . -maxdepth 1 -name "*.*" -not -type d -exec isutf8 "{}" "+")
     (find app bin scripts src tests web -name "*.*" -not -type d -not -name "*.png" -not -name "*.gif" -not -name "favicon.ico"  -exec isutf8 "{}" "+")
     ```
+    <!-- markdownlint-enable MD013 -->
 
 ## Weblinks
 
