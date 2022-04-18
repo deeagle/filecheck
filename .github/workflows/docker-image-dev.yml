@@ -2,8 +2,11 @@ name: Docker Image CI
 
 on:
   push:
-    tags:
-      - 'v*'
+    branches:
+      - 'master'
+  pull_request:
+    branches:
+      - 'master'
 
 jobs:
   build-container:
@@ -24,8 +27,8 @@ jobs:
         with:
           images: docdee/filecheck
           tags: |
-            type=raw,value=${{ github.event.release.tag_name }}
-            type=raw,value=latest
+            type=ref,event=branch
+            type=sha,prefix=dev-
 
       - name: Build and push
         uses: docker/build-push-action@v2
