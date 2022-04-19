@@ -10,6 +10,8 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    outputs:
+      app_version: ${{ steps.step1.outputs.app_version }}
     steps:
       - name: Checkout code
         uses: actions/checkout@master
@@ -26,3 +28,46 @@ jobs:
         run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Get the last tag via git and store in var
+        id: step1
+        run: |
+          APP_VERSION=$(git describe --tags $(git rev-list --tags --max-count=1))
+          echo "${APP_VERSION}"
+          echo "::set-output name=app_version::${APP_VERSION}"
+
+  docker-hub:
+    needs: release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@master
+
+      - name: show app_version from release job
+        run: echo ${{ needs.release.outputs.app_version }}
+
+      - name: Login to DockerHub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_TOKEN }}
+
+      - name: Extract metadata (tags, labels) for Docker
+        id: meta
+        uses: docker/metadata-action@v3
+        with:
+          images: docdee/filecheck
+          tags: |
+            type=ref,event=branch
+            type=raw,value=${{ needs.release.outputs.app_version }}
+            type=raw,value=latest
+
+      - name: Build and push
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
