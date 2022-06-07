@@ -8,9 +8,12 @@
 I need a container for CI/CD testing of incoming changes from
 non linux environments. Installed tools are:
 
-- `find`, `file`, `git`, `isutf8`
+- `find`
+- `file`
+- `git`
+- `isutf8`
 
-## Examples
+## Usage
 
 You can check your files for:
 
