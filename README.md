@@ -1,15 +1,19 @@
 # Container 4 file checks
 
 ![Build status](https://github.com/deeagle/filecheck/workflows/CI/badge.svg)
+![Release status](https://github.com/deeagle/filecheck/workflows/Release%20version/badge.svg)
 [![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)
 [![Alpine](https://img.shields.io/badge/Alpine_Linux-0D597F?style=flat-square&logo=alpine-linux&logoColor=white)](https://img.shields.io/badge/Alpine_Linux-0D597F?style=flat-square&logo=alpine-linux&logoColor=white)
 
 I need a container for CI/CD testing of incoming changes from
 non linux environments. Installed tools are:
 
-- `find`, `file`, `git`, `isutf8`
+- `find`
+- `file`
+- `git`
+- `isutf8`
 
-## Examples
+## Usage
 
 You can check your files for:
 
