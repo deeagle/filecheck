@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.0.3](https://github.com/deeagle/filecheck/compare/v1.0.2...v1.0.3) (2022-06-24)
+
+
+### Bug Fixes
+
+* **dockerfile:** update container infos ([26fdc69](https://github.com/deeagle/filecheck/commit/26fdc6912f227d46b08d7a709af810a708a1c5aa))
+
 ## [1.0.2](https://github.com/deeagle/filecheck/compare/v1.0.1...v1.0.2) (2022-04-18)
 
 
