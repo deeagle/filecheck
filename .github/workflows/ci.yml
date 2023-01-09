@@ -19,7 +19,8 @@ jobs:
         with:
           #rules: '/lint/rules/changelog.js'
           #config: '/lint/config/changelog.yml'
-          args: 'README.md'
+          args: '*.md'
+          ignore: 'CHANGELOG.md'
 
   lint-dockerfile:
     name: Lint Dockerfile
