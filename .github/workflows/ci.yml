@@ -12,22 +12,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Lint readme file
         uses: avto-dev/markdown-lint@v1
         with:
           #rules: '/lint/rules/changelog.js'
           #config: '/lint/config/changelog.yml'
-          args: 'README.md'
+          args: '*.md'
+          ignore: 'CHANGELOG.md'
 
   lint-dockerfile:
     name: Lint Dockerfile
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@v3
       - name: Lint dockerfile
-        uses: hadolint/hadolint-action@v2.0.0
+        uses: hadolint/hadolint-action@v3.0.0
         with:
           dockerfile: Dockerfile
