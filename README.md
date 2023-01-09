@@ -4,6 +4,7 @@
 ![Release status](https://github.com/deeagle/filecheck/workflows/Release%20version/badge.svg)
 [![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)
 [![Alpine](https://img.shields.io/badge/Alpine_Linux-0D597F?style=flat-square&logo=alpine-linux&logoColor=white)](https://img.shields.io/badge/Alpine_Linux-0D597F?style=flat-square&logo=alpine-linux&logoColor=white)
+[![Docker](https://badgen.net/badge/icon/docker?icon=docker&label)](https://hub.docker.com/r/docdee/filecheck)
 
 I need a container for CI/CD testing of incoming changes from
 non linux environments. Installed tools are:
@@ -38,6 +39,5 @@ You can check your files for:
 
 - [CHANGELOG](CHANGELOG.md)
 - [filecheck on github.com](https://github.com/deeagle/filecheck)
-- [filecheck on hub.docker.com](https://hub.docker.com/r/docdee/filecheck)
 - [docker-alpine](https://github.com/alpinelinux/docker-alpine)
 - [Dockerfile lint](https://github.com/hadolint/hadolint)
