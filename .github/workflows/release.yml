@@ -16,7 +16,7 @@ jobs:
       app_version: ${{ steps.step1.outputs.app_version }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@3
+        uses: actions/checkout@v3
 
       - name: Setup Nodejs
         uses: actions/setup-node@v3
@@ -44,7 +44,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@3
+        uses: actions/checkout@v3
 
       - name: show app_version from release job
         run: echo ${{ needs.release.outputs.app_version }}
