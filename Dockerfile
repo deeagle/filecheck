@@ -1,4 +1,4 @@
-FROM alpine:3.19
+FROM alpine:3.20
 LABEL org.opencontainers.image.authors="Martin Kock <code@deeagle.de>" \
       org.opencontainers.image.url="https://github.com/deeagle/filecheck" \
       org.opencontainers.image.title="File-Control tools." \
