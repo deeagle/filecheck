@@ -9,7 +9,7 @@
         "releaseRules": [
           {
             "type": "build",
-            "scope": "debs",
+            "scope": "deps",
             "release": "patch",
           }
         ],
