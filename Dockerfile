@@ -1,4 +1,4 @@
-FROM alpine:3.22
+FROM alpine:3.24
 
 ARG BUILD_DATE=unknown
 ARG GIT_COMMIT=unknown
