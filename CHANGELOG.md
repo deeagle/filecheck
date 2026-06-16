@@ -1,5 +1,7 @@
 # Semantic Versioning Changelog
 
+## [1.0.4](https://github.com/deeagle/filecheck/compare/v1.0.3...v1.0.4) (2026-06-16)
+
 ## [1.0.3](https://github.com/deeagle/filecheck/compare/v1.0.2...v1.0.3) (2022-06-24)
 
 
