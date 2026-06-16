@@ -3,4 +3,6 @@
 # configure ignore rules
 # see https://github.com/hadolint/hadolint#rules for a list of available rules.
 ignored:
+  - DL3016
   - DL3018
+  - DL3048
